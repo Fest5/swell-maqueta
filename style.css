@@ -1,0 +1,550 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+:root {
+	--text-primary-color: white;
+}
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Raleway", sans-serif;
+	font-weight: 400;
+	line-height: 1.7;
+	color: var(--text-primary-color);
+	width: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+nav {
+	font-weight: 600;
+}
+
+.navbar {
+	width: 100%;
+}
+
+.navbar-collapse {
+	flex-grow: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	color: var(--text-primary-color);
+	font-size: 1.5em;
+}
+
+.menu {
+	font-weight: bolder;
+}
+
+.logo {
+	height: 200px;
+	width: 500px;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 8em;
+	text-shadow: 1px 1px 2px #0000008e;
+}
+
+h2 {
+	font-weight: 900;
+	font-size: 6em;
+}
+
+h3 {
+	font-weight: 600;
+	font-size: 2em;
+}
+
+.trip-info h3 {
+	font-size: 2.5em;
+}
+
+main {
+	height: 75vh;
+}
+
+.main-open {
+	height: 90%;
+	width: 85%;
+}
+
+.nosotros {
+	background-size: cover;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6110819327731092) 0%,
+			rgba(255, 255, 255, 0) 65%
+		),
+		url("public/images/nosotros.jpg");
+}
+.nosotros-title {
+	position: relative;
+	bottom: 20%;
+}
+
+.nosotros-descripcion {
+	font-weight: 600;
+	color: rgb(83, 83, 83);
+	font-size: 1.6em;
+	padding-top: 1em;
+}
+
+.contacto {
+	background-size: 100% 160%;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6110819327731092) 0%,
+			rgba(255, 255, 255, 0) 100%
+		),
+		url("public/images/carrousel/pag\ 3\ armar\ compose.jpg");
+}
+
+.home {
+	min-height: 100vh;
+	background-size: cover;
+	background-image: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	);
+}
+
+.trip-titulos {
+	color: #212529;
+}
+
+.trip-content {
+	height: 60%;
+	width: 95%;
+}
+
+.image-trip {
+	width: 100%;
+	height: 100%;
+}
+
+.image-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	grid-template-rows: repeat(2, minmax(200px, 1fr));
+	grid-gap: 0.5rem;
+	width: 55%;
+}
+
+.img-container {
+	display: flex;
+	flex-direction: column;
+	background-color: rgb(238, 238, 238);
+	color: #212529;
+}
+
+.img-container p {
+	margin-bottom: 0;
+}
+
+.reactive-container {
+	overflow: hidden;
+	max-height: 100%;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.reactive-container:hover > .cross-container > .cross:after {
+	transform: rotate(-90deg);
+}
+
+.reactive-container.top:hover {
+	transform: translate(-51%, 51%) scale(2.028);
+	z-index: 90;
+}
+
+.reactive-container.bottom:hover {
+	transform: translate(51%, -51%) scale(2.04);
+	z-index: 90;
+}
+
+.trip-info {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
+	justify-content: center;
+	align-items: center;
+	margin-top: 15%;
+
+	height: 80%;
+
+	/* margin: 0;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+}
+
+.trip-info.open.surf-house {
+	height: 55%;
+}
+
+.trip-info.open {
+	justify-content: space-between;
+	height: 40%;
+	margin-top: 0px;
+	font-size: 1.4em;
+}
+
+.trip-info.open p {
+	font-size: 0.5em;
+}
+
+.trip-info.open h5 {
+	margin-bottom: 0;
+}
+
+.trip-info.bottom {
+	margin-top: 0%;
+	margin-bottom: 15%;
+}
+
+.includes-title {
+	line-height: 0.5;
+	text-align: center;
+}
+
+.includes-title span {
+	display: inline-block;
+	position: relative;
+}
+
+.includes-title span:before,
+.includes-title span:after {
+	content: "";
+	position: absolute;
+	border-bottom: 1px solid #212529;
+	top: 0;
+	width: 100px;
+}
+
+.includes-title span:before {
+	right: 100%;
+	margin-right: 15px;
+}
+.includes-title span:after {
+	left: 100%;
+	margin-left: 15px;
+}
+
+.surf-content {
+	height: 50%;
+}
+
+.content-open {
+	padding: 5em 5em 0em 5em;
+	font-size: 0.29em;
+	height: 60%;
+}
+
+.surf-house .content-open {
+	padding: 0;
+	width: 80%;
+}
+
+.content-open.bottom {
+	height: 45%;
+}
+
+.item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 30%;
+	padding: 5px;
+	text-align: center;
+	color: inherit;
+	font-size: 1.4em;
+}
+
+.price-boxes-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.3rem;
+	margin-top: 65px;
+}
+
+.price-box {
+	border: 1px solid #000;
+	width: 70px;
+	padding-left: 2px;
+	padding-right: 2px;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5em;
+}
+
+.video-box {
+	width: 44%;
+	background-color: rgb(238, 238, 238);
+}
+
+.button {
+	appearance: button;
+	-moz-appearance: button;
+	-webkit-appearance: button;
+	text-align: center;
+	border-style: solid;
+	border-color: var(--text-primary-color);
+	border-radius: 30px;
+	padding: 0.2em;
+	background-color: transparent;
+	color: var(--text-primary-color);
+	font-weight: 900;
+	font-size: 2.7em;
+	transition: all 0.5s;
+}
+
+.button:hover {
+	color: var(--text-primary-color);
+	background-color: black;
+}
+
+.intro {
+	width: 30%;
+	margin-left: 12em;
+}
+
+.list-item {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: 0 1.8em;
+}
+
+.redes {
+	display: flex;
+	width: 35%;
+	justify-content: space-between;
+}
+
+.icon-row {
+	height: 40%;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+}
+
+.trip-info .icon {
+	width: 60px;
+	height: 60px;
+}
+
+.icon.open {
+	width: 25px;
+	height: 25px;
+	margin-bottom: 5px;
+}
+
+.form-control {
+	border-color: black;
+}
+
+.submit {
+	border: none;
+	background-color: transparent;
+}
+
+.cross-container {
+	width: 100%;
+	height: 20%;
+}
+
+.cross-box {
+	position: absolute;
+	right: 0%;
+	top: 2%;
+	width: 50px;
+	height: 50px;
+}
+
+.cross1 {
+	position: relative;
+	top: 0%;
+	left: 2%;
+}
+
+.cross2 {
+	position: relative;
+	top: 40%;
+	left: 90%;
+}
+
+.cross2.open {
+	position: inherit;
+	top: 10%;
+}
+
+.cross:hover {
+	opacity: 1;
+}
+.cross:before,
+.cross:after {
+	position: absolute;
+	left: 15px;
+	content: " ";
+	height: 23px;
+	width: 2px;
+	background-color: #333;
+	transition: all 0.3 ease-in-out;
+}
+.cross:before {
+	transform: rotate(90deg);
+}
+.cross:after {
+	transform: rotate(-180deg);
+}
+
+.cross.open::before,
+.cross.open::after {
+	transform: rotate(90deg);
+}
+
+.extra {
+	font-size: 0.4rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+	display: block;
+	width: 100%;
+	height: 300px;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	margin: auto;
+}
+
+.mySlides {
+	display: block;
+}
+
+/* Next & previous buttons */
+/* .prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+} */
+
+/* Position the "next button" to the right */
+/* .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+} */
+
+/* On hover, add a black background color with a little bit see-through */
+/* .prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+} */
+
+/* Caption text */
+/* .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+} */
+
+/* Number text (1/3 etc) */
+/* .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+} */
+
+/* The dots/bullets/indicators */
+/* .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+} */
+
+/* .active,
+.dot:hover {
+  background-color: #717171;
+} */
+
+/* Fading animation */
+.fade-img {
+	-webkit-animation-name: fade-img;
+	-webkit-animation-duration: 2s;
+	animation-name: fade-img;
+	animation-duration: 3s;
+}
+
+@-webkit-keyframes fade-img {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-img {
+	from {
+		opacity: 0.85;
+	}
+	to {
+		opacity: 1;
+	}
+}
