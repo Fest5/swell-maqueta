@@ -3,6 +3,7 @@ const skiTrips = document.getElementById('ski-trips')
 const surfTrips = document.getElementById('surf-trips')
 const surfHouse = document.getElementById('surf-house')
 
+
 if(selina) {
     const selinaClosedMarkup = `
     <div class="cross-container">
@@ -17,7 +18,7 @@ if(selina) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column justify-content-between align-self-center p-2">
+    <div class="container main-open d-flex flex-column justify-content-between align-self-center p-2">
         <div class="trip-info open">
             <div>
                 <img class="icon open" src="public/svg/home.svg" alt="home">
@@ -31,52 +32,65 @@ if(selina) {
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
-                    <p> <b>Alojamiento</b> </p>
+                    <span> <b>Alojamiento</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
-                    <p> <b>Desayuno,
-                    Almuerzo</b> </p>
+                    <span> <b>Desayuno,
+                    Almuerzo</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/skis.svg">
-                    <p> <b>Equipos</b> </p>
+                    <span> <b>Equipos</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/ticket.svg">
-                    <p> <b>Pases</b> </p>
+                    <span> <b>Pases</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
-                    <p> <b>Traslado al cerro</b> <br> <i>Ida & vuelta</i> </p>
+                    <span> <b>Traslado al cerro</b> <br> <i>Ida & vuelta</i> </span>
                 </div>
             </div>
-            <div class="icon-row d-flex justify-content-between">
-                <div class="price-box">
+            <div class="row justify-content-around">
+                <div class="price-box col">
                     <h3><b>$x</b></h3>
-                    <p> Ski Week </p>
+                    <span> Ski Week </span>
                 </div>
-                <div class="price-box">
+                <div class="price-box col">
                     <h3><b>$x</b></h3>
-                    <p> 3 ski days </p>
+                    <span> 3 ski days </span>
                 </div>
-                <div class="price-box">
+                <div class="price-box col">
                     <h3><b>$x</b></h3>
-                    <p> Ski day </p>
+                    <span> Ski day </span>
                 </div>
             </div>
         </div>
     </div>
     `
-    selina.addEventListener('mouseenter', (event) => {
-        selina.innerHTML = selinaOpenMarkup
-    })
-    selina.addEventListener('mouseleave', (event) => {
-        selina.innerHTML = selinaClosedMarkup
+    
+
+    selina.onclick = () => {
+        selina.classList.toggle("open") 
+        if(selina.classList.contains("open")) {
+            selina.innerHTML = selinaOpenMarkup
+        } else {
+            selina.innerHTML = selinaClosedMarkup
+        }
+        
+    }
+    
+    document.addEventListener('mouseup', (e) => {
+        if(!selina.contains(e.target)) {
+            selina.classList.remove("open")
+            selina.innerHTML = selinaClosedMarkup
+        }
     })
 }
 
 if(skiTrips) {
+    
     const skiTripsClosedMarkup = `
     <div class="trip-info">
         <img class="icon" src="public/svg/skis.svg" alt="skis">
@@ -104,45 +118,60 @@ if(skiTrips) {
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
-                    <p> <b>7 noches</b> en 
-                    la finca en el cerro </p>
+                    <span> <b>7 noches</b> en 
+                    la finca en el cerro </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
-                    <p> Desayuno,
-                    Almuerzo & Cena </p>
+                    <span> Desayuno,
+                    Almuerzo & Cena </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
-                    <p> <b>Transfer al aeropuerto</b>
-                    Ida & vuelta </p>
+                    <span> <b>Transfer al aeropuerto</b>
+                    Ida & vuelta </span>
                 </div>
             </div>
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/bonfire.svg">
-                    <p> <b>Equipos</b> </p>
+                    <span> <b>Equipos</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/ticket.svg">
-                    <p> <b>Pases</b> </p>
+                    <span> <b>Pases</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/electric-guitar.svg">
-                    <p> <b>Música en vivo</b></p>
+                    <span> <b>Música en vivo</b></span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/beer.svg">
-                    <p> <b>After ski</b></p>
+                    <span> <b>After ski</b></span>
                 </div>
             </div>
-            <p class="text-center mt-2"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
+            <p class="text-center mt-2 extra"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
         </div>
     </div>
     `
-    skiTrips.onmouseenter = () => skiTrips.innerHTML = skiTripsOpenMarkup
+
+
+    skiTrips.onclick = () => {
+        skiTrips.classList.toggle("open") 
+        if(skiTrips.classList.contains("open")) {
+            skiTrips.innerHTML = skiTripsOpenMarkup
+        } else {
+            skiTrips.innerHTML = skiTripsClosedMarkup
+        }
         
-    skiTrips.onmouseleave = () => skiTrips.innerHTML = skiTripsClosedMarkup
+    }
+    
+    document.addEventListener('mouseup', (e) => {
+        if(!skiTrips.contains(e.target)) {
+            skiTrips.classList.remove("open")
+            skiTrips.innerHTML = skiTripsClosedMarkup
+        }
+    })
 }
 
 if(surfHouse) {
@@ -171,78 +200,88 @@ if(surfHouse) {
                 <div class="icon-row d-flex justify-content-between">
                     <div class="item">
                         <img class="icon open" src="public/svg/bed.svg">
-                        <p> <b>Habitaciones:</b> <br> En suite & compartidas </p>
+                        <span> <b>Habitaciones:</b> En suite & compartidas </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/coffee-cup.svg">
-                        <p> <b>Desayuno</b> </p>
+                        <span> <b>Desayuno</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/skateboard.svg">
-                        <p> <b>Skate Ramp</b> </p>
+                        <span> <b>Skate Ramp</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/wifi.svg">
-                        <p> <b>WiFi</b> </p>
+                        <span> <b>WiFi</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/chef.svg">
-                        <p> <b>Cocina</b> </p>
+                        <span> <b>Cocina</b> </span>
                     </div>
                 </div>
                 <div class="icon-row d-flex justify-content-between">
                     <div class="item">
                         <img class="icon open" src="public/svg/tenedor.svg">
-                        <p> <b>Parrilla</b> </p>
+                        <span> <b>Parrilla</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/tree.svg">
-                        <p> <b>Jardín</b> </p>
+                        <span> <b>Jardín</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/electric-guitar.svg">
-                        <p> <b>Música en vivo</b></p>
+                        <span> <b>Música en vivo</b></span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/verduras.svg">
-                        <p> <b>Huerta</b></p>
+                        <span> <b>Huerta</b></span>
                     </div>
                     <div class="item">
                         <img class="icon open" src="public/svg/bonfire.svg">
-                        <p> <b>Fogoneros</b> </p>
+                        <span> <b>Fogoneros</b> </span>
                     </div>
                 </div>
             </div>
             <p class="includes-title mt-4 mb-2"><span><b>Alquilamos trajes y tablas!</b></span></p>
         </div>
-        <div class="price-boxes-row">
-            <div class="price-box">
+        <div class="price-boxes-row row">
+            <div class="price-box col">
                 <h3><b>$1500</b></h3>
-                <p> por noche
-                Domingos a Jueves </p>
+                <span> por noche
+                Domingos a Jueves </span>
             </div>
-            <div class="price-box">
+            <div class="price-box col">
                 <h3><b>$2500</b></h3>
-                <p> por noche
-                Viernes y Sábados </p>
+                <span> por noche
+                Viernes y Sábados </span>
             </div>
-            <div class="price-box">
+            <div class="price-box col">
                 <h3><b>$7000</b></h3>
-                <p> por semana </p>
+                <span> por semana </span>
             </div>
-            <div class="price-box">
+            <div class="price-box col">
                 <h3><b>$2000</b></h3>
-                <p> Clases de surf </p>
+                <span> Clases de surf </span>
             </div>
         </div>
         <p class="text-center mt-2 extra"><b>*Consultar por clases opcionales de yoga</b></p>
     </div>
     `
-    surfHouse.addEventListener('mouseenter', (event) => {
-        surfHouse.innerHTML = surfHouseOpenMarkup
-    })
-    surfHouse.addEventListener('mouseleave', (event) => {
-        surfHouse.innerHTML = surfHouseClosedMarkup
+    surfHouse.onclick = () => {
+        surfHouse.classList.toggle("open") 
+        if(surfHouse.classList.contains("open")) {
+            surfHouse.innerHTML = surfHouseOpenMarkup
+        } else {
+            surfHouse.innerHTML = surfHouseClosedMarkup
+        }
+        
+    }
+    
+    document.addEventListener('mouseup', (e) => {
+        if(!surfHouse.contains(e.target)) {
+            surfHouse.classList.remove("open")
+            surfHouse.innerHTML = surfHouseClosedMarkup
+        }
     })
 }
 
@@ -260,7 +299,7 @@ if(surfTrips) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="d-flex flex-column justify-content-between align-self-center h-100  p-2">
+    <div class="container d-flex flex-column justify-content-between align-self-center justify-self-center h-100  p-2">
         <div class="trip-info open">
             <div>
                 <img class="icon open" src="public/svg/surfboard.svg" alt="skis">
@@ -269,37 +308,37 @@ if(surfTrips) {
             </div>
             <p class="includes-title mt-3 mb-2"><span><b>Incluye</b></span></p>
         </div>
-        <div class="content-open d-flex flex-column justify-content-between">
-            <div class="icon-row d-flex justify-content-between">
+        <div class="content-open d-flex flex-column justify-content-center">
+            <div class="icon-row d-flex justify-content-center">
                 <div class="item">
                     <img class="icon open" src="public/svg/home.svg">
-                    <p> 3 noches en <b>Swell Surf House</b> </p>
+                    <span> 3 noches en <b>Swell Surf House</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
-                    <p> Desayuno,
-                    Almuerzo & Cena </p>
+                    <span> Desayuno,
+                    Almuerzo & Cena </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/surfboard.svg">
-                    <p> 3 clases
-                    de surf y yoga </p>
+                    <span> 3 clases
+                    de surf y yoga </span>
                 </div>
             </div>
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/bonfire.svg">
-                    <p> Fogón </p>
+                    <span> Fogón </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/electric-guitar.svg">
-                    <p> <b>Música 
-                    en vivo</b> </p>
+                    <span> <b>Música 
+                    en vivo</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
-                    <p> <b>Traslado 
-                    en carpool</b></p>
+                    <span> <b>Traslado 
+                    en carpool</b></span>
                 </div>
             </div>
         </div>
@@ -307,15 +346,23 @@ if(surfTrips) {
     
     
     `
-    surfTrips.onmouseenter = () => surfTrips.innerHTML = surfTripsOpenMarkup
+    surfTrips.onclick = () => {
+        surfTrips.classList.toggle("open") 
+        if(surfTrips.classList.contains("open")) {
+            surfTrips.innerHTML = surfTripsOpenMarkup
+        } else {
+            surfTrips.innerHTML = surfTripsClosedMarkup
+        }
         
-    surfTrips.onmouseleave = () => surfTrips.innerHTML = surfTripsClosedMarkup
+    }
+    
+    document.addEventListener('mouseup', (e) => {
+        if(!surfTrips.contains(e.target)) {
+            surfTrips.classList.remove("open")
+            surfTrips.innerHTML = surfTripsClosedMarkup
+        }
+    })
 }
-
-
-const selinaOpen = `
-    <div>
-`
 
 //Carousel
 

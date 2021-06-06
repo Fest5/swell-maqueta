@@ -30,7 +30,7 @@ html {
 }
 
 /* 900px */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 991px) {
 	html {
 		font-size: 65%;
 	}
@@ -60,12 +60,32 @@ nav {
 	font-weight: 600;
 }
 
+form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+	form {
+		justify-content: unset;
+	}
+}
+
 .navbar {
+	z-index: 999;
 	width: 100%;
 }
 
 .navbar-collapse {
 	flex-grow: 0;
+}
+
+.navbar-nav {
+	flex-direction: row;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -79,18 +99,26 @@ nav {
 
 .logo {
 	height: 200px;
-	width: 500px;
+	margin-left: 6.5%;
+}
+
+/* 600px */
+@media only screen and (max-width: 991px) {
+	.logo {
+		height: 150px;
+		margin-left: 0;
+	}
 }
 
 h1 {
 	font-weight: 900;
-	font-size: 8em;
+	font-size: 7em;
 	text-shadow: 1px 1px 2px #0000008e;
 }
 
 h2 {
 	font-weight: 900;
-	font-size: 6em;
+	font-size: 5em;
 }
 
 h3 {
@@ -100,10 +128,6 @@ h3 {
 
 .trip-info h3 {
 	font-size: 2.5em;
-}
-
-main {
-	height: 75vh;
 }
 
 /* 600px */
@@ -116,6 +140,16 @@ main {
 .main-open {
 	height: 90%;
 	width: 85%;
+}
+
+.main-content {
+	height: 100vh;
+}
+
+@media only screen and (max-width: 991px) {
+	.main-content {
+		height: 100%;
+	}
 }
 
 .nosotros {
@@ -142,10 +176,24 @@ main {
 }
 
 .nosotros-descripcion {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	font-weight: 600;
 	color: rgb(83, 83, 83);
 	font-size: 1.6em;
 	padding-top: 1em;
+	width: 50%;
+	height: 50%;
+}
+
+/* 600px */
+@media only screen and (max-width: 600px) {
+	.nosotros-descripcion {
+		width: 90%;
+	}
 }
 
 .contacto {
@@ -231,12 +279,16 @@ main {
 	transform: rotate(-90deg);
 }
 
-.reactive-container.top:hover {
+.reactive-container:hover {
+	box-shadow: 0px 0px 13px 1px rgba(0, 0, 0, 0.75);
+}
+
+.open.top {
 	transform: translate(-51%, 51%) scale(2.028);
 	z-index: 90;
 }
 
-.reactive-container.bottom:hover {
+.open.bottom {
 	transform: translate(51%, -51%) scale(2.04);
 	z-index: 90;
 }
@@ -316,8 +368,6 @@ main {
 }
 
 .content-open {
-	padding: 5em 5em 0em 5em;
-	font-size: 0.29em;
 	height: 60%;
 }
 
@@ -333,7 +383,6 @@ main {
 .item {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
 	width: 30%;
 	padding: 5px;
@@ -342,26 +391,24 @@ main {
 	font-size: 1.4em;
 }
 
+.item span {
+	font-size: 0.4rem;
+}
+
 .price-boxes-row {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	font-size: 0.3rem;
-	margin-top: 65px;
+	margin-top: 10%;
 }
 
 .price-box {
 	border: 1px solid #000;
-	width: 70px;
-	padding-left: 2px;
-	padding-right: 2px;
-	height: 100%;
+	padding: 1%;
+	height: 80%;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: 1.5em;
+	font-size: 0.5rem;
 }
 
 .video-box {
@@ -431,6 +478,13 @@ main {
 .icon {
 	width: 40px;
 	height: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+	.icon {
+		width: 20px;
+		height: 20px;
+	}
 }
 
 .trip-info .icon {
