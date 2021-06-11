@@ -92,6 +92,13 @@ p {
 	flex-grow: 0;
 }
 
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.navbar-collapse {
+		margin-top: -5rem;
+	}
+}
+
 .navbar-nav {
 	flex-direction: row;
 }
