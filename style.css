@@ -46,7 +46,7 @@ html {
 /* 600px */
 @media only screen and (max-width: 500px) {
 	html {
-		font-size: 40%;
+		font-size: 45%;
 	}
 }
 
@@ -163,6 +163,13 @@ h3 {
 	font-size: 2em;
 }
 
+/* 500px */
+@media only screen and (max-width: 500px) {
+	h3 {
+		font-size: 3em;
+	}
+}
+
 .trip-info h3 {
 	font-size: 2.5em;
 }
@@ -230,6 +237,7 @@ h3 {
 @media only screen and (max-width: 600px) {
 	.nosotros-descripcion {
 		width: 90%;
+		font-size: 2.5em;
 	}
 }
 
@@ -260,6 +268,7 @@ h3 {
 .trip-content {
 	height: 60%;
 	width: 95%;
+	padding: 1rem;
 }
 
 /* 900px */
@@ -286,6 +295,17 @@ h3 {
 	grid-gap: 0.5rem;
 	width: 53%;
 }
+/* 900px */
+@media only screen and (max-width: 500px) {
+	.image-grid {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.img-container:last-child {
+		order: 2;
+	}
+}
 
 /* 900px */
 @media only screen and (max-width: 991px) {
@@ -308,6 +328,13 @@ h3 {
 	transition: all 0.3s ease-in-out;
 }
 
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.reactive-container {
+		height: 35em;
+	}
+}
+
 .reactive-container:hover > .cross-container > .cross:after {
 	transform: rotate(-90deg);
 }
@@ -324,6 +351,19 @@ h3 {
 .open.bottom {
 	transform: translate(51%, -51%) scale(2.04);
 	z-index: 90;
+}
+
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.open.top {
+		transform: none;
+		z-index: inherit;
+	}
+
+	.open.bottom {
+		transform: none;
+		z-index: inherit;
+	}
 }
 
 .trip-info {
@@ -372,11 +412,14 @@ h3 {
 	line-height: 0.5;
 	text-align: center;
 	font-size: 1.2em;
-}
-
-.includes-title span {
 	display: inline-block;
 	position: relative;
+}
+
+@media only screen and (max-width: 500px) {
+	.includes-title span {
+		font-size: 3em;
+	}
 }
 
 .includes-title span:before,
@@ -428,6 +471,13 @@ h3 {
 	font-size: 0.4rem;
 }
 
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.item span {
+		font-size: 1rem;
+	}
+}
+
 .price-box {
 	padding: 1%;
 	height: 80%;
@@ -443,6 +493,13 @@ h3 {
 	font-size: 1.2em;
 }
 
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.price-box span {
+		font-size: 3em;
+	}
+}
+
 .video-box {
 	width: 46%;
 	background-color: rgb(238, 238, 238);
@@ -453,6 +510,13 @@ h3 {
 	.video-box {
 		width: 90%;
 		background-color: rgb(238, 238, 238);
+	}
+}
+
+/* 900px */
+@media only screen and (max-width: 500px) {
+	.video-box {
+		margin-top: 3rem;
 	}
 }
 
@@ -609,6 +673,12 @@ h3 {
 
 .extra {
 	font-size: 0.4rem;
+}
+
+@media only screen and (max-width: 500px) {
+	.extra {
+		font-size: 1rem;
+	}
 }
 
 @media (min-width: 1400px) {
