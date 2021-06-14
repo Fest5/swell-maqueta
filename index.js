@@ -20,7 +20,7 @@ if(selina) {
     </div>
     <div class="main-open d-flex flex-column align-self-center p-2">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Experiencia Selina</h5>
                 <p>Sumate a #SelinaSnowExperience en el Hotel Selina con 
@@ -54,16 +54,16 @@ if(selina) {
             </div>
             <div class="row justify-content-around">
                 <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> Ski Week </span>
+                    <h3>Desde: <b>$103.100</b></h3>
+                    <span> 9 noches 7 días de Ski </span>
                 </div>
                 <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> 3 ski days </span>
+                    <h3>Desde: <b>$54.600</b></h3>
+                    <span> 5 noches 3 días de Ski </span>
                 </div>
                 <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> Ski day </span>
+                    <h3>Desde: <b>$25.000</b></h3>
+                    <span> 3 noches 1 día de Ski </span>
                 </div>
             </div>
         </div>
@@ -107,7 +107,7 @@ if(skiTrips) {
     </div>
     <div class="main-open d-flex flex-column justify-content-between align-self-center  p-2">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/skis.svg" alt="skis">
                 <h5>Ski Trips</h5>
                 <p>Una semana a puro ski en el Cerro Catedral, Bariloche</p>
@@ -191,7 +191,7 @@ if(surfHouse) {
     </div>
     <div class="main-open d-flex flex-column justify-content-around align-self-center p-2">
         <div class="trip-info surf-house open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Swell Surf House</h5>
                 <p>Ubicada en Chapadmalal, a 150 mts de la playa Siempre Verde.</p>
@@ -301,7 +301,7 @@ if(surfTrips) {
     </div>
     <div class="container d-flex flex-column justify-content-between align-self-center justify-self-center h-100  p-2">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/surfboard.svg" alt="skis">
                 <h5>Surf Trips</h5>
                 <p>¡Escapate al mar!</p>

@@ -71,7 +71,7 @@ form {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 100%;
+	width: 90%;
 	height: 100%;
 }
 
@@ -102,19 +102,12 @@ p {
 /* 500px */
 @media only screen and (max-width: 500px) {
 	.navbar-collapse {
-		margin-top: -5rem;
+		margin-top: -2rem;
 	}
 }
 
 .navbar-nav {
 	flex-direction: row;
-}
-
-/* 500px */
-@media only screen and (max-width: 500px) {
-	.navbar-nav {
-		flex-direction: column;
-	}
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -124,6 +117,16 @@ p {
 
 .menu {
 	font-weight: bolder;
+	width: 50%;
+	margin: auto;
+}
+
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.menu {
+		width: auto;
+		margin: 0;
+	}
 }
 
 .logo {
@@ -165,8 +168,14 @@ h3 {
 
 /* 500px */
 @media only screen and (max-width: 500px) {
+	h1 {
+		font-size: 5.5rem;
+	}
+	h2 {
+		font-size: 4rem;
+	}
 	h3 {
-		font-size: 3em;
+		font-size: 2rem;
 	}
 }
 
@@ -198,6 +207,7 @@ h3 {
 
 .nosotros {
 	height: 75%;
+	background-position: center;
 	background-size: cover;
 	background-image: linear-gradient(
 			0deg,
@@ -237,18 +247,19 @@ h3 {
 @media only screen and (max-width: 600px) {
 	.nosotros-descripcion {
 		width: 90%;
-		font-size: 2.5em;
+		font-size: 1.8rem;
 	}
 }
 
 .contacto {
-	background-size: 100% 160%;
+	background-size: cover;
 	background-image: linear-gradient(
 			0deg,
 			rgba(0, 0, 0, 0.6110819327731092) 0%,
 			rgba(255, 255, 255, 0) 100%
 		),
 		url("public/images/carrousel/pag\ 3\ armar\ compose-min.jpg");
+	background-position: center;
 }
 
 .home {
@@ -279,6 +290,13 @@ h3 {
 		flex-direction: column-reverse;
 		align-items: center;
 		justify-content: center;
+	}
+}
+
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.trip-header {
+		font-size: 2.5rem;
 	}
 }
 
@@ -568,6 +586,20 @@ h3 {
 	font-size: 1.3em;
 	font-weight: 600;
 	padding: 0 1.8em;
+}
+
+/* 500px */
+@media only screen and (max-width: 500px) {
+	.list-item {
+		padding: 0;
+	}
+}
+
+/* 500px */
+@media only screen and (max-width: 350px) {
+	.list-item {
+		font-size: 1em;
+	}
 }
 
 .redes {
