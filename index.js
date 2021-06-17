@@ -54,15 +54,18 @@ if(selina) {
             </div>
             <div class="row justify-content-around">
                 <div class="price-box col">
-                    <h3>Desde: <b>$103.100</b></h3>
+                    <h3>Desde:</h3>
+                    <h3><b>$103.100</b></h3>
                     <span> 9 noches 7 días de Ski </span>
                 </div>
                 <div class="price-box col">
-                    <h3>Desde: <b>$54.600</b></h3>
+                    <h3>Desde:</h3>
+                    <h3><b>$54.600</b></h3>
                     <span> 5 noches 3 días de Ski </span>
                 </div>
                 <div class="price-box col">
-                    <h3>Desde: <b>$25.000</b></h3>
+                    <h3>Desde:</h3>
+                    <h3><b>$25.000</b></h3>
                     <span> 3 noches 1 día de Ski </span>
                 </div>
             </div>
@@ -150,6 +153,7 @@ if(skiTrips) {
                     <span> <b>After ski</b></span>
                 </div>
             </div>
+            <h5 class="text-center"><b>Precio:</b> $125.000</h5>
             <p class="text-center mt-2 extra"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
         </div>
     </div>
@@ -242,7 +246,7 @@ if(surfHouse) {
                     </div>
                 </div>
             </div>
-            <p class="includes-title mt-4 mb-2"><span><b>Alquilamos trajes y tablas!</b></span></p>
+            <p class="includes-title mt-4 mb-2"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         </div>
         <div class="price-boxes-row row">
             <div class="price-box col">
@@ -317,7 +321,8 @@ if(surfTrips) {
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
                     <span> Desayuno,
-                    Almuerzo & Cena </span>
+                    Almuerzo & Cena.</span>
+                    <span><b>Experiencia Gourmet</b></span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/surfboard.svg">
@@ -341,6 +346,10 @@ if(surfTrips) {
                     en carpool</b></span>
                 </div>
             </div>
+        </div>
+        <div class="text-center">
+            <h5><b>Próximos trips:</b> 9/9 al 12/9 y 23/9 al 26/9</h5>
+            <h5><b>Precio:</b> $30.000</h5>
         </div>
     </div>
     

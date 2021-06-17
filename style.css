@@ -175,7 +175,11 @@ h3 {
 		font-size: 4rem;
 	}
 	h3 {
-		font-size: 2rem;
+		font-size: 1.5rem;
+	}
+
+	h5 {
+		font-size: 1.2rem;
 	}
 }
 
@@ -436,7 +440,8 @@ h3 {
 
 @media only screen and (max-width: 500px) {
 	.includes-title span {
-		font-size: 3em;
+		font-size: 1.2rem;
+		margin-top: 1.8rem;
 	}
 }
 
@@ -608,9 +613,9 @@ h3 {
 	justify-content: space-between;
 }
 
-.icon-row {
+/* .icon-row {
 	height: 40%;
-}
+} */
 
 .icon {
 	width: 40px;
@@ -632,6 +637,7 @@ h3 {
 .icon.open {
 	width: 25px;
 	height: auto;
+	margin-bottom: 0.5rem;
 }
 
 .icon.open.swell {
