@@ -770,44 +770,30 @@ h3 {
 	height: 100%;
 }
 
+@media only screen and (max-width: 500px) {
+	.mySlides {
+		background-image: none;
+	}
+}
+
 .slide-1 {
-	background-image: /* linear-gradient(
-			0deg,
-			rgba(0, 0, 0, 0.6110819327731092) 0%,
-			rgba(255, 255, 255, 0) 65%
-		), */ url("public/images/carrousel/IMG_8033chapa-min.jpg");
+	background-image: url("public/images/carrousel/IMG_8033chapa-min.jpg");
 }
 
 .slide-2 {
-	background-image: /* linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.6110819327731092) 0%,
-		rgba(255, 255, 255, 0) 65%
-	), */ url("public/images/carrousel/pag 3 armar compose-min.jpg");
+	background-image: url("public/images/carrousel/pag 3 armar compose-min.jpg");
 }
 
 .slide-3 {
-	background-image: /* linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.6110819327731092) 0%,
-		rgba(255, 255, 255, 0) 65%
-	), */ url("public/images/carrousel/D85_7496-min.jpg");
+	background-image: url("public/images/carrousel/D85_7496-min.jpg");
 }
 
 .slide-4 {
-	background-image: /* linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.6110819327731092) 0%,
-		rgba(255, 255, 255, 0) 65%
-	), */ url("public/images/carrousel/editada 2-min.jpg");
+	background-image: url("public/images/carrousel/editada 2-min.jpg");
 }
 
 .slide-5 {
-	background-image: /* linear-gradient(
-		0deg,
-		rgba(0, 0, 0, 0.6110819327731092) 0%,
-		rgba(255, 255, 255, 0) 65%
-	), */ url("public/images/carrousel/editada-min.jpg");
+	background-image: url("public/images/carrousel/editada-min.jpg");
 }
 
 /* .carousel-img {
