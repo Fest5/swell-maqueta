@@ -246,7 +246,7 @@ if(surfHouse) {
                     </div>
                 </div>
             </div>
-            <p class="includes-title mt-4 mb-2"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
+            <p class="includes-title"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         </div>
         <div class="price-boxes-row row">
             <div class="price-box col">
@@ -310,7 +310,7 @@ if(surfTrips) {
                 <h5>Surf Trips</h5>
                 <p>¡Escapate al mar!</p>
             </div>
-            <p class="includes-title mt-3 mb-2"><span><b>Incluye</b></span></p>
+            <p class="includes-title"><span><b>Incluye</b></span></p>
         </div>
         <div class="content-open d-flex flex-column justify-content-center">
             <div class="icon-row d-flex justify-content-center">
