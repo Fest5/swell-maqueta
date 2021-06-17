@@ -770,12 +770,6 @@ h3 {
 	height: 100%;
 }
 
-@media only screen and (max-width: 500px) {
-	.mySlides {
-		background-image: none;
-	}
-}
-
 .slide-1 {
 	background-image: url("public/images/carrousel/IMG_8033chapa-min.jpg");
 }
