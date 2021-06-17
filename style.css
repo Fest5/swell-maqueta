@@ -754,15 +754,67 @@ h3 {
 }
 
 .mySlides {
-	width: 100%;
-	height: 100%;
-}
-
-.carousel-img {
+	background-position: center;
+	-webkit-background-size: cover; /* Safari 3.0 */
+	-moz-background-size: cover; /* Gecko 1.9.2 (Firefox 3.6) */
+	-o-background-size: cover; /* Opera 9.5 */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	);
 	object-fit: cover;
 	width: 100%;
 	height: 100%;
 }
+
+.slide-1 {
+	background-image: /* linear-gradient(
+			0deg,
+			rgba(0, 0, 0, 0.6110819327731092) 0%,
+			rgba(255, 255, 255, 0) 65%
+		), */ url("public/images/carrousel/IMG_8033chapa-min.jpg");
+}
+
+.slide-2 {
+	background-image: /* linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	), */ url("public/images/carrousel/pag 3 armar compose-min.jpg");
+}
+
+.slide-3 {
+	background-image: /* linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	), */ url("public/images/carrousel/D85_7496-min.jpg");
+}
+
+.slide-4 {
+	background-image: /* linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	), */ url("public/images/carrousel/editada 2-min.jpg");
+}
+
+.slide-5 {
+	background-image: /* linear-gradient(
+		0deg,
+		rgba(0, 0, 0, 0.6110819327731092) 0%,
+		rgba(255, 255, 255, 0) 65%
+	), */ url("public/images/carrousel/editada-min.jpg");
+}
+
+/* .carousel-img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+} */
 
 /* Next & previous buttons */
 /* .prev,
