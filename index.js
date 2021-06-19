@@ -18,7 +18,7 @@ if(selina) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column align-self-center p-2">
+    <div class="main-open d-flex justify-content-between flex-column align-self-center">
         <div class="trip-info open">
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
@@ -26,8 +26,9 @@ if(selina) {
                 <p>Sumate a #SelinaSnowExperience en el Hotel Selina con 
                 vista al lago Nahuel Huapi en la ciudad de Bariloche. </p>
             </div>
-            <p class="includes-title"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open bottom d-flex flex-column justify-content-between">
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
@@ -52,7 +53,9 @@ if(selina) {
                     <span> <b>Traslado al cerro</b> <br> <i>Ida & vuelta</i> </span>
                 </div>
             </div>
-            <div class="row justify-content-around">
+            
+        </div>
+        <div class="row justify-content-around">
                 <div class="price-box col">
                     <h3>Desde:</h3>
                     <h3><b>$103.100</b></h3>
@@ -69,7 +72,6 @@ if(selina) {
                     <span> 3 noches 1 día de Ski </span>
                 </div>
             </div>
-        </div>
     </div>
     `
     
@@ -108,15 +110,16 @@ if(skiTrips) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column justify-content-between align-self-center  p-2">
+    <div class="main-open d-flex justify-content-between flex-column align-self-center  p-2">
         <div class="trip-info open">
             <div class="trip-header">
                 <img class="icon open" src="public/svg/skis.svg" alt="skis">
                 <h5>Ski Trips</h5>
                 <p>Una semana a puro ski en el Cerro Catedral, Bariloche</p>
             </div>
-            <p class="includes-title"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open d-flex flex-column justify-content-between">
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
@@ -153,6 +156,10 @@ if(skiTrips) {
                     <span> <b>After ski</b></span>
                 </div>
             </div>
+           
+            
+        </div>
+        <div class="fechas">
             <h5 class="text-center"><b>Precio:</b> $125.000</h5>
             <p class="text-center mt-2 extra"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
         </div>
@@ -193,7 +200,7 @@ if(surfHouse) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column justify-content-around align-self-center p-2">
+    <div class="main-open d-flex flex-column justify-content-around align-self-center">
         <div class="trip-info surf-house open">
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
@@ -246,8 +253,9 @@ if(surfHouse) {
                     </div>
                 </div>
             </div>
-            <p class="includes-title"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
+            
         </div>
+        <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
                 <h3><b>$1500</b></h3>
@@ -310,8 +318,9 @@ if(surfTrips) {
                 <h5>Surf Trips</h5>
                 <p>¡Escapate al mar!</p>
             </div>
-            <p class="includes-title"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open d-flex flex-column justify-content-center">
             <div class="icon-row d-flex justify-content-center">
                 <div class="item">
@@ -347,7 +356,7 @@ if(surfTrips) {
                 </div>
             </div>
         </div>
-        <div class="text-center">
+        <div class="fechas text-center">
             <h5><b>Próximos trips:</b> 9/9 al 12/9 y 23/9 al 26/9</h5>
             <h5><b>Precio:</b> $30.000</h5>
         </div>
