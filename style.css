@@ -197,6 +197,7 @@ h3 {
 .main-open {
 	height: 90%;
 	width: 95%;
+	margin: auto;
 }
 
 .main-content {
@@ -234,6 +235,7 @@ h3 {
 .nosotros-title {
 	position: relative;
 	bottom: 20%;
+	font-size: 4em;
 }
 
 .nosotros-descripcion {
