@@ -58,18 +58,13 @@ if(selina) {
         <div class="row justify-content-around">
                 <div class="price-box col">
                     <h3>Desde:</h3>
-                    <h3><b>$103.100</b></h3>
-                    <span> 9 noches 7 días de Ski </span>
+                    <h3><b>$95.000</b></h3>
+                    <span> 7 noches, 7 días de Ski </span>
                 </div>
                 <div class="price-box col">
                     <h3>Desde:</h3>
-                    <h3><b>$54.600</b></h3>
-                    <span> 5 noches 3 días de Ski </span>
-                </div>
-                <div class="price-box col">
-                    <h3>Desde:</h3>
-                    <h3><b>$25.000</b></h3>
-                    <span> 3 noches 1 día de Ski </span>
+                    <h3><b>$46.500</b></h3>
+                    <span> 3 noches, 3 días de Ski </span>
                 </div>
             </div>
     </div>
