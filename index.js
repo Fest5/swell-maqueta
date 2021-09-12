@@ -253,25 +253,23 @@ if(surfHouse) {
         <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
-                <h3><b>$1500</b></h3>
-                <span> por noche
-                Domingos a Jueves </span>
+                <h3><b>$4000</b></h3>
+                <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$2500</b></h3>
-                <span> por noche
-                Viernes y Sábados </span>
-            </div>
-            <div class="price-box col">
-                <h3><b>$7000</b></h3>
-                <span> por semana </span>
+                <h3><b>$22.500</b></h3>
+                <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
                 <h3><b>$2000</b></h3>
                 <span> Clases de surf </span>
             </div>
+            <div class="price-box col">
+                <h3><b>$600</b></h3>
+                <span> Clase de yoga </span>
+            </div>
+            
         </div>
-        <p class="text-center extra"><b>*Consultar por clases opcionales de yoga</b></p>
     </div>
     `
     surfHouse.onclick = () => {
@@ -320,7 +318,7 @@ if(surfTrips) {
             <div class="icon-row d-flex justify-content-center">
                 <div class="item">
                     <img class="icon open" src="public/svg/home.svg">
-                    <span> 3 noches en <b>Swell Surf House</b> </span>
+                    <span> 3 o 4 noches en <b>Swell Surf House</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
@@ -352,8 +350,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 9/9 al 12/9 y 23/9 al 26/9</h5>
-            <h5><b>Precio:</b> $30.000</h5>
+            <h5><b>Próximos trips:</b> 7/10 al 11/10 y 28/10 al 31/10</h5>
+            <h5><b>Precio:</b> $45.000 - $35.000</h5>
         </div>
     </div>
     
