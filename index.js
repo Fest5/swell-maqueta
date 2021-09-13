@@ -200,7 +200,7 @@ if(surfHouse) {
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Swell Surf House</h5>
-                <p>Ubicada en Chapadmalal, a 150 mts de la playa Siempre Verde.</p>
+                <p>Ubicada en Chapadmalal, a 300 mts de la playa Siempre Verde.</p>
             </div>
             <div class="content-open d-flex flex-column justify-content-between">
                 <div class="icon-row d-flex justify-content-between">
