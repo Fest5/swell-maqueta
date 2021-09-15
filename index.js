@@ -213,8 +213,8 @@ if(surfHouse) {
                         <span> <b>Desayuno</b> </span>
                     </div>
                     <div class="item">
-                        <img class="icon open swell" src="public/svg/skateboard.svg">
-                        <span> <b>Skate Ramp</b> </span>
+                        <img class="icon open swell" src="public/svg/swimming-pool.svg">
+                        <span> <b>Pileta</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open swell" src="public/svg/wifi.svg">
