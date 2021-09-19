@@ -272,7 +272,7 @@ h3 {
 			rgba(0, 0, 0, 0.6110819327731092) 0%,
 			rgba(255, 255, 255, 0) 100%
 		),
-		url("public/images/carrousel/pag\ 3\ armar\ compose-min.jpg");
+		url("public/images/new-contact.jpg");
 }
 
 .home {
@@ -792,7 +792,7 @@ h3 {
 }
 
 .slide-2 {
-	background-image: url("public/images/carrousel/pag 3 armar compose-min.jpg");
+	background-image: url("public/images/carrousel/casa-rosa.jpg");
 }
 
 .slide-3 {
@@ -805,6 +805,10 @@ h3 {
 
 .slide-5 {
 	background-image: url("public/images/carrousel/editada-min.jpg");
+}
+
+.slide-6 {
+	background-image: url("public/images/carrousel/desayuno-cowork.jpg");
 }
 
 /* .carousel-img {

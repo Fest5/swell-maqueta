@@ -200,7 +200,7 @@ if(surfHouse) {
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Swell Surf House</h5>
-                <p>Ubicada en Chapadmalal, a 300 mts de la playa Siempre Verde.</p>
+                <p>Ubicada en Chapadmalal, a 300 mts del mar.</p>
             </div>
             <div class="content-open d-flex flex-column justify-content-between">
                 <div class="icon-row d-flex justify-content-between">
@@ -231,8 +231,8 @@ if(surfHouse) {
                         <span> <b>Parrilla</b> </span>
                     </div>
                     <div class="item">
-                        <img class="icon open swell" src="public/svg/tree.svg">
-                        <span> <b>Jardín</b> </span>
+                        <img class="icon open swell" src="public/svg/coworking.svg">
+                        <span> <b>Co-Working</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open swell" src="public/svg/electric-guitar.svg">
@@ -253,11 +253,11 @@ if(surfHouse) {
         <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
-                <h3><b>$4000</b></h3>
+                <h3><b>$3000</b></h3>
                 <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$22.500</b></h3>
+                <h3><b>$15.000</b></h3>
                 <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
@@ -420,5 +420,5 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 9000); // Change image every 9 seconds
+  setTimeout(showSlides, 6000); // Change image every 9 seconds
 }
