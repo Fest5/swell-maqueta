@@ -377,7 +377,7 @@ if(surfTrips) {
 
 //Carousel
 
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
@@ -408,8 +408,8 @@ showSlides(slideIndex);
 
 //Slides automáticos
 
-var slideIndex = 0;
-showSlides();
+//var slideIndex = 0;
+//showSlides();
 
 function showSlides() {
   var i;
@@ -420,5 +420,8 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change image every 9 seconds
+  //console.log(slideIndex)
+ // console.log(slides.length)
+  
 }
+setInterval(showSlides, 5000); // Change image every 5 seconds
