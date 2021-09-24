@@ -18,16 +18,17 @@ if(selina) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column align-self-center p-2">
+    <div class="main-open d-flex justify-content-between flex-column align-self-center">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Experiencia Selina</h5>
                 <p>Sumate a #SelinaSnowExperience en el Hotel Selina con 
                 vista al lago Nahuel Huapi en la ciudad de Bariloche. </p>
             </div>
-            <p class="includes-title"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open bottom d-flex flex-column justify-content-between">
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
@@ -52,21 +53,20 @@ if(selina) {
                     <span> <b>Traslado al cerro</b> <br> <i>Ida & vuelta</i> </span>
                 </div>
             </div>
-            <div class="row justify-content-around">
+            
+        </div>
+        <div class="row justify-content-around">
                 <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> Ski Week </span>
+                    <h3>Desde:</h3>
+                    <h3><b>$95.000</b></h3>
+                    <span> 7 noches / 7 días de Ski </span>
                 </div>
                 <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> 3 ski days </span>
-                </div>
-                <div class="price-box col">
-                    <h3>Desde: <b>$x</b></h3>
-                    <span> Ski day </span>
+                    <h3>Desde:</h3>
+                    <h3><b>$46.500</b></h3>
+                    <span> 3 noches / 3 días de Ski </span>
                 </div>
             </div>
-        </div>
     </div>
     `
     
@@ -105,15 +105,16 @@ if(skiTrips) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column justify-content-between align-self-center  p-2">
+    <div class="main-open d-flex justify-content-between flex-column align-self-center  p-2">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/skis.svg" alt="skis">
                 <h5>Ski Trips</h5>
                 <p>Una semana a puro ski en el Cerro Catedral, Bariloche</p>
             </div>
-            <p class="includes-title"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open d-flex flex-column justify-content-between">
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
@@ -150,6 +151,11 @@ if(skiTrips) {
                     <span> <b>After ski</b></span>
                 </div>
             </div>
+           
+            
+        </div>
+        <div class="fechas">
+            <h5 class="text-center"><b>Precio:</b> $125.000</h5>
             <p class="text-center mt-2 extra"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
         </div>
     </div>
@@ -189,12 +195,12 @@ if(surfHouse) {
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex flex-column justify-content-around align-self-center p-2">
+    <div class="main-open d-flex flex-column justify-content-around align-self-center">
         <div class="trip-info surf-house open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Swell Surf House</h5>
-                <p>Ubicada en Chapadmalal, a 150 mts de la playa Siempre Verde.</p>
+                <p>Ubicada en Chapadmalal, a 300 mts del mar.</p>
             </div>
             <div class="content-open d-flex flex-column justify-content-between">
                 <div class="icon-row d-flex justify-content-between">
@@ -207,8 +213,8 @@ if(surfHouse) {
                         <span> <b>Desayuno</b> </span>
                     </div>
                     <div class="item">
-                        <img class="icon open swell" src="public/svg/skateboard.svg">
-                        <span> <b>Skate Ramp</b> </span>
+                        <img class="icon open swell" src="public/svg/swimming-pool.svg">
+                        <span> <b>Pileta</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open swell" src="public/svg/wifi.svg">
@@ -225,8 +231,8 @@ if(surfHouse) {
                         <span> <b>Parrilla</b> </span>
                     </div>
                     <div class="item">
-                        <img class="icon open swell" src="public/svg/tree.svg">
-                        <span> <b>Jardín</b> </span>
+                        <img class="icon open swell" src="public/svg/coworking.svg">
+                        <span> <b>Co-Working</b> </span>
                     </div>
                     <div class="item">
                         <img class="icon open swell" src="public/svg/electric-guitar.svg">
@@ -242,29 +248,28 @@ if(surfHouse) {
                     </div>
                 </div>
             </div>
-            <p class="includes-title mt-4 mb-2"><span><b>Alquilamos trajes y tablas!</b></span></p>
+            
         </div>
+        <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
-                <h3><b>$1500</b></h3>
-                <span> por noche
-                Domingos a Jueves </span>
+                <h3><b>$3000</b></h3>
+                <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$2500</b></h3>
-                <span> por noche
-                Viernes y Sábados </span>
-            </div>
-            <div class="price-box col">
-                <h3><b>$7000</b></h3>
-                <span> por semana </span>
+                <h3><b>$15.000</b></h3>
+                <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
                 <h3><b>$2000</b></h3>
                 <span> Clases de surf </span>
             </div>
+            <div class="price-box col">
+                <h3><b>$600</b></h3>
+                <span> Clase de yoga </span>
+            </div>
+            
         </div>
-        <p class="text-center extra"><b>*Consultar por clases opcionales de yoga</b></p>
     </div>
     `
     surfHouse.onclick = () => {
@@ -301,23 +306,25 @@ if(surfTrips) {
     </div>
     <div class="container d-flex flex-column justify-content-between align-self-center justify-self-center h-100  p-2">
         <div class="trip-info open">
-            <div>
+            <div class="trip-header">
                 <img class="icon open" src="public/svg/surfboard.svg" alt="skis">
                 <h5>Surf Trips</h5>
                 <p>¡Escapate al mar!</p>
             </div>
-            <p class="includes-title mt-3 mb-2"><span><b>Incluye</b></span></p>
+            
         </div>
+        <p class="includes-title"><span><b>Incluye</b></span></p>
         <div class="content-open d-flex flex-column justify-content-center">
             <div class="icon-row d-flex justify-content-center">
                 <div class="item">
                     <img class="icon open" src="public/svg/home.svg">
-                    <span> 3 noches en <b>Swell Surf House</b> </span>
+                    <span> 3 o 4 noches en <b>Swell Surf House</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
                     <span> Desayuno,
-                    Almuerzo & Cena </span>
+                    Almuerzo & Cena.</span>
+                    <span><b>Experiencia Gourmet</b></span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/surfboard.svg">
@@ -341,6 +348,10 @@ if(surfTrips) {
                     en carpool</b></span>
                 </div>
             </div>
+        </div>
+        <div class="fechas text-center">
+            <h5><b>Próximos trips:</b> 7/10 al 11/10 y 28/10 al 31/10</h5>
+            <h5><b>Precio:</b> $45.000 - $35.000</h5>
         </div>
     </div>
     
@@ -366,20 +377,20 @@ if(surfTrips) {
 
 //Carousel
 
-var slideIndex = 1;
+var slideIndex = 0;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+/* function plusSlides(n) {
   showSlides(slideIndex += n);
-}
+} */
 
 // Thumbnail image controls
-function currentSlide(n) {
+/* function currentSlide(n) {
   showSlides(slideIndex = n);
-}
+} */
 
-function showSlides(n) {
+/* function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
@@ -393,12 +404,12 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}
+} */
 
 //Slides automáticos
 
-var slideIndex = 0;
-showSlides();
+//var slideIndex = 0;
+//showSlides();
 
 function showSlides() {
   var i;
@@ -409,5 +420,8 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}
   slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 6000); // Change image every 6 seconds
+  //console.log(slideIndex)
+ // console.log(slides.length)
+  
 }
+setInterval(showSlides, 5000); // Change image every 5 seconds
