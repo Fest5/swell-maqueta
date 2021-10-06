@@ -200,6 +200,12 @@ h3 {
 	margin: auto;
 }
 
+@media only screen and (max-height: 700px) {
+	.main-open {
+		height: auto;
+	}
+}
+
 .main-content {
 	height: 100vh;
 }
@@ -261,7 +267,7 @@ h3 {
 }
 
 .contacto {
-	background-position: center;
+	/* background-position: center; */
 	-webkit-background-size: cover; /* Safari 3.0 */
 	-moz-background-size: cover; /* Gecko 1.9.2 (Firefox 3.6) */
 	-o-background-size: cover; /* Opera 9.5 */
@@ -273,6 +279,13 @@ h3 {
 			rgba(255, 255, 255, 0) 100%
 		),
 		url("public/images/new-contact.jpg");
+}
+
+/* 600px */
+@media only screen and (max-width: 991px) {
+	.contacto {
+		background-position: center;
+	}
 }
 
 .home {
