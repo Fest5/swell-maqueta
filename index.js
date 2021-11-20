@@ -257,7 +257,7 @@ if(surfHouse) {
                 <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$15.000</b></h3>
+                <h3><b>$19.000</b></h3>
                 <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
@@ -350,8 +350,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 4/11 al 7/11 y 18/11 al 22/11</h5>
-            <h5><b>Precio:</b> $35.000 - $45.000</h5>
+            <h5><b>Próximos trips:</b> 18/11 al 22/11 y 8/12 al 12/12</h5>
+            <h5><b>Precio:</b> $47.000 - $55.000</h5>
         </div>
     </div>
     
