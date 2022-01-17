@@ -253,15 +253,15 @@ if(surfHouse) {
         <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
-                <h3><b>$3000</b></h3>
+                <h3><b>$4000</b></h3>
                 <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$15.000</b></h3>
+                <h3><b>$27.000</b></h3>
                 <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
-                <h3><b>$2000</b></h3>
+                <h3><b>$2500</b></h3>
                 <span> Clases de surf </span>
             </div>
             <div class="price-box col">
@@ -350,8 +350,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 7/10 al 11/10 y 28/10 al 31/10</h5>
-            <h5><b>Precio:</b> $45.000 - $35.000</h5>
+            <h5><b>Próximos trips:</b> 26/1 al 30/1, 9/2 al 13/2 y 25/2 al 1/3</h5>
+            <h5><b>Precio:</b> $51.000 (reservando antes del 15/1).</h5>
         </div>
     </div>
     
