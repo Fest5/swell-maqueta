@@ -253,15 +253,15 @@ if(surfHouse) {
         <p class="includes-title surf-house"><span><b>¡Alquilamos trajes y tablas!</b></span></p>
         <div class="price-boxes-row row">
             <div class="price-box col">
-                <h3><b>$3500</b></h3>
+                <h3><b>$4000</b></h3>
                 <span> por noche en habitación compartida c/ desayuno </span>
             </div>
             <div class="price-box col">
-                <h3><b>$21.000</b></h3>
+                <h3><b>$27.000</b></h3>
                 <span> por semana en habitación compartida c/ desayuno</span>
             </div>
             <div class="price-box col">
-                <h3><b>$2000</b></h3>
+                <h3><b>$2500</b></h3>
                 <span> Clases de surf </span>
             </div>
             <div class="price-box col">
