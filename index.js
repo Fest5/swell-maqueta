@@ -350,8 +350,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 26/1 al 30/1, 9/2 al 13/2 y 25/2 al 1/3</h5>
-            <h5><b>Precio:</b> $51.000 (reservando antes del 22/1).</h5>
+            <h5><b>Próximos trips:</b> 9/2 al 13/2, 10/3 al 13/3 y 23/3 al 27/3</h5>
+            <h5><b>Precio:</b> $60.000 - $45.000 - $60.000.</h5>
         </div>
     </div>
     
