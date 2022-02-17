@@ -3,6 +3,20 @@ const skiTrips = document.getElementById('ski-trips')
 const surfTrips = document.getElementById('surf-trips')
 const surfHouse = document.getElementById('surf-house')
 
+window.onload = (e) => {
+    const popup = document.getElementById('popup')
+    const popup__content = document.getElementById('popup__content')
+    popup.style.visibility = 'visible'
+    popup.style.opacity = '1'
+    popup.children[0].style.opacity = '1'
+
+    document.addEventListener('mouseup', (e) => {
+        if(!popup__content.contains(e.target)) {
+            closePopup()
+        }
+    })
+}
+
 
 if(selina) {
     const selinaClosedMarkup = `
@@ -425,3 +439,10 @@ function showSlides() {
   
 }
 setInterval(showSlides, 5000); // Change image every 5 seconds
+
+const closePopup = () => {
+    document.getElementById('popup').style.opacity = 0
+    document.getElementById('popup').style.visibility = "hidden"
+    /* document.getElementById('popup_').style.opacity = 0
+    document.getElementById('popup').style.opacity = 0 */
+}

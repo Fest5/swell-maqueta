@@ -927,3 +927,132 @@ h3 {
 		opacity: 1;
 	}
 }
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 4000;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	opacity: 0;
+	/* visibility: hidden; */
+	transition: opacity 1s;
+}
+@supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+	.popup {
+		-webkit-backdrop-filter: blur(10px);
+		backdrop-filter: blur(10px);
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+}
+.popup__content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 75%;
+	background-color: #fff;
+	box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+	display: table;
+	overflow: hidden;
+	opacity: 0;
+	transform: translate(-50%, -50%), scale(0.25);
+	transition: all 0.4s 0.2s;
+}
+
+.popup__image {
+	max-width: 100%;
+}
+
+.popup__button {
+	position: absolute;
+	width: 15%;
+	transition: all 0.15s ease-out;
+}
+
+.popup__button:hover {
+	transform: scale(1.1);
+}
+
+.popup__button-1 {
+	top: 50%;
+	right: 5%;
+}
+
+.popup__button-2 {
+	top: 70%;
+	right: 5%;
+}
+
+.popup__left {
+	width: 33.333333%;
+	display: table-cell;
+	backface-visibility: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+	.popup__left {
+		width: 0%;
+	}
+}
+.popup__right {
+	width: 66.666667%;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 3rem 5rem;
+	backface-visibility: hidden;
+}
+@media only screen and (max-width: 56.25em) {
+	.popup__right {
+		width: 100%;
+	}
+}
+.popup__img {
+	display: block;
+	width: 100%;
+}
+.popup__text {
+	font-size: 1.4rem;
+	margin-bottom: 4rem;
+	-moz-column-count: 2;
+	-moz-column-gap: 4rem;
+	-moz-column-rule: 1px solid #eee;
+	column-count: 2;
+	column-gap: 4rem;
+	column-rule: 1px solid #eee;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+@media only screen and (max-width: 56.25em) {
+	.popup__text {
+		font-size: 1rem;
+		margin-bottom: 2rem;
+	}
+}
+.popup:target {
+	opacity: 1;
+	visibility: visible;
+}
+.popup:target .popup__content {
+	opacity: 1;
+	transform: translate(50%, 50%), scale(1);
+}
+.popup__close:link,
+.popup__close:visited {
+	color: #777;
+	position: absolute;
+	top: 2.5rem;
+	right: 2.5rem;
+	font-size: 3rem;
+	text-decoration: none;
+	display: inline-block;
+	line-height: 1;
+	z-index: 9999;
+}
+.popup__close:hover {
+	color: #4ad6ff;
+}
