@@ -37,8 +37,7 @@ if(selina) {
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
                 <h5>Experiencia Selina</h5>
-                <p>Sumate a #SelinaSnowExperience en el Hotel Selina con 
-                vista al lago Nahuel Huapi en la ciudad de Bariloche. </p>
+                <p>Una semana a puro snow en el Cerro Catedral, Bariloche. </p>
             </div>
             
         </div>
@@ -47,38 +46,32 @@ if(selina) {
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
-                    <span> <b>Alojamiento</b> </span>
+                    <span> <b>7 noches en Swell House</b>  ( a 300 mts de los medios de elevación). </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
-                    <span> <b>Desayuno,
-                    Almuerzo</b> </span>
+                    <span> <b>Desayuno & Cena gourmet.</b> </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/skis.svg">
-                    <span> <b>Equipos</b> </span>
+                    <span> <b>Equipos</b> x 7 días </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/ticket.svg">
-                    <span> <b>Pases</b> </span>
+                    <span> <b>Pases</b> x 7 días </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
-                    <span> <b>Traslado al cerro</b> <br> <i>Ida & vuelta</i> </span>
+                    <span> <b>Transfer Aeropuerto</b> <br> <i>In & Out</i> </span>
                 </div>
             </div>
             
         </div>
         <div class="row justify-content-around">
                 <div class="price-box col">
-                    <h3>Desde:</h3>
-                    <h3><b>$95.000</b></h3>
-                    <span> 7 noches / 7 días de Ski </span>
-                </div>
-                <div class="price-box col">
-                    <h3>Desde:</h3>
-                    <h3><b>$46.500</b></h3>
-                    <span> 3 noches / 3 días de Ski </span>
+                    <h3>Precio:</h3>
+                    <h3><b>880 usd</b></h3>
+                    <p class="text-center mt-2 extra"><b>* Consultar por aéreos, almuerzo en la montaña, clases de ski y snowboard.</b> </p>
                 </div>
             </div>
     </div>
@@ -123,8 +116,8 @@ if(skiTrips) {
         <div class="trip-info open">
             <div class="trip-header">
                 <img class="icon open" src="public/svg/skis.svg" alt="skis">
-                <h5>Ski Trips</h5>
-                <p>Una semana a puro ski en el Cerro Catedral, Bariloche</p>
+                <h5>Snow Trips</h5>
+                <p>Una semana a puro snow en el Cerro Catedral, Bariloche</p>
             </div>
             
         </div>
@@ -133,28 +126,27 @@ if(skiTrips) {
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
-                    <span> <b>7 noches</b> en 
-                    la finca en el cerro </span>
+                    <span> <b>7 noches en la Finca</b>  (a 200 mts de los medios de elevación).</span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
-                    <span> Desayuno,
-                    Almuerzo & Cena </span>
+                    <span> Desayuno &
+                    Cena </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
-                    <span> <b>Transfer al aeropuerto</b>
-                    Ida & vuelta </span>
+                    <span> <b>Transfer aeropuerto</b>
+                    In & Out </span>
                 </div>
             </div>
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
-                    <img class="icon open" src="public/svg/bonfire.svg">
-                    <span> <b>Equipos</b> </span>
+                    <img class="icon open" src="public/svg/skis.svg">
+                    <span> <b>Equipos</b> x 7 días </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/ticket.svg">
-                    <span> <b>Pases</b> </span>
+                    <span> <b>Pases</b> x 7 días </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/electric-guitar.svg">
@@ -169,8 +161,8 @@ if(skiTrips) {
             
         </div>
         <div class="fechas">
-            <h5 class="text-center"><b>Precio:</b> $125.000</h5>
-            <p class="text-center mt-2 extra"><b>*Consultar por aéreos, clases de ski y snowboard</b></p>
+            <h5 class="text-center"><b>Precio:</b> 880 usd</h5>
+            <p class="text-center mt-2 extra"><b>* Consultar por aéreos, almuerzo en la montaña, clases de ski y snowboard.</b></p>
         </div>
     </div>
     `
@@ -364,8 +356,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 10/3 al 13/3, 23/3 al 27/3 y 13/4 al 17/4</h5>
-            <h5><b>Precio:</b> $45.000 - $51.000 - $70.000</h5>
+            <h5><b>Próximos trips:</b> 23/3 al 27/3, 13/4 al 17/4 y 28/4 al 1/5</h5>
+            <h5><b>Precio:</b> $51.000 - $70.000 - $60.000</h5>
         </div>
     </div>
     
