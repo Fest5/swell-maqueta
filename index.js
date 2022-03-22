@@ -25,7 +25,7 @@ if(selina) {
     </div>
     <div class="trip-info bottom">
         <img class="icon" src="public/svg/home.svg" alt="home">
-        <h3>Experiencia Selina</h3>
+        <h3>Swell House</h3>
     </div>
     `
     const selinaOpenMarkup = `
@@ -36,7 +36,7 @@ if(selina) {
         <div class="trip-info open">
             <div class="trip-header">
                 <img class="icon open" src="public/svg/home.svg" alt="home">
-                <h5>Experiencia Selina</h5>
+                <h5>Swell House</h5>
                 <p>Una semana a puro snow en el Cerro Catedral, Bariloche. </p>
             </div>
             
@@ -101,7 +101,7 @@ if(skiTrips) {
     const skiTripsClosedMarkup = `
     <div class="trip-info">
         <img class="icon" src="public/svg/skis.svg" alt="skis">
-        <h3>Ski Trips</h3>
+        <h3>Snow Trips en la Finca</h3>
     </div>
     <div class="cross-container">
         <a href="#" class="cross cross1"></a>
