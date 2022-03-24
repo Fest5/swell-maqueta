@@ -3,7 +3,8 @@ const skiTrips = document.getElementById('ski-trips')
 const surfTrips = document.getElementById('surf-trips')
 const surfHouse = document.getElementById('surf-house')
 
-window.onload = (e) => {
+// POPUP INICIO
+/* window.onload = (e) => {
     const popup = document.getElementById('popup')
     const popup__content = document.getElementById('popup__content')
     popup.style.visibility = 'visible'
@@ -15,7 +16,7 @@ window.onload = (e) => {
             closePopup()
         }
     })
-}
+} */
 
 
 if(selina) {
@@ -25,7 +26,8 @@ if(selina) {
     </div>
     <div class="trip-info bottom">
         <img class="icon" src="public/svg/home.svg" alt="home">
-        <h3>Swell House</h3>
+        <h3>Snow Trips</h3>
+        <p>en Swell House</p>
     </div>
     `
     const selinaOpenMarkup = `
@@ -46,7 +48,7 @@ if(selina) {
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
-                    <span> <b>7 noches en Swell House</b>  ( a 300 mts de los medios de elevación). </span>
+                    <span> <b>7 noches en Swell House</b>  (Habitaciones privadas y compartidas). </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/chef.svg">
@@ -101,7 +103,8 @@ if(skiTrips) {
     const skiTripsClosedMarkup = `
     <div class="trip-info">
         <img class="icon" src="public/svg/skis.svg" alt="skis">
-        <h3>Snow Trips en la Finca</h3>
+        <h3>Snow Trips</h3>
+        <p>en la Finca</p>
     </div>
     <div class="cross-container">
         <a href="#" class="cross cross1"></a>
@@ -356,8 +359,8 @@ if(surfTrips) {
             </div>
         </div>
         <div class="fechas text-center">
-            <h5><b>Próximos trips:</b> 23/3 al 27/3, 13/4 al 17/4 y 28/4 al 1/5</h5>
-            <h5><b>Precio:</b> $51.000 - $70.000 - $60.000</h5>
+            <h5><b>Próximos trips:</b> 13/4 al 17/4 y 28/4 al 1/5</h5>
+            <h5><b>Precio:</b> $70.000 - $45.000</h5>
         </div>
     </div>
     
@@ -420,12 +423,15 @@ showSlides(slideIndex);
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  if(slides.length > 0) {
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "block";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
+  
   //console.log(slideIndex)
  // console.log(slides.length)
   
@@ -435,6 +441,4 @@ setInterval(showSlides, 5000); // Change image every 5 seconds
 const closePopup = () => {
     document.getElementById('popup').style.opacity = 0
     document.getElementById('popup').style.visibility = "hidden"
-    /* document.getElementById('popup_').style.opacity = 0
-    document.getElementById('popup').style.opacity = 0 */
 }
