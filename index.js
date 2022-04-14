@@ -30,21 +30,22 @@ if(selina) {
         <h4>en Swell House</h4>
     </div>
     `
+
     const selinaOpenMarkup = `
     <div class="cross-box">
         <a href="#" class="cross open"></a>
     </div>
-    <div class="main-open d-flex justify-content-between flex-column align-self-center">
+    <div class="main-open d-flex justify-content-between flex-column align-self-center  p-2">
         <div class="trip-info open">
             <div class="trip-header">
-                <img class="icon open" src="public/svg/home.svg" alt="home">
+                <img class="icon open" src="public/svg/skis.svg" alt="skis">
                 <h5>Swell House</h5>
-                <p>Una semana a puro snow en el Cerro Catedral, Bariloche. </p>
+                <p>Una semana a puro snow en el Cerro Catedral, Bariloche.</p>
             </div>
             
         </div>
         <p class="includes-title"><span><b>Incluye</b></span></p>
-        <div class="content-open bottom d-flex flex-column justify-content-between">
+        <div class="content-open d-flex flex-column justify-content-between">
             <div class="icon-row d-flex justify-content-between">
                 <div class="item">
                     <img class="icon open" src="public/svg/house.svg">
@@ -63,11 +64,15 @@ if(selina) {
                     <span> <b>Pases</b> x 7 días </span>
                 </div>
             </div>
+
             <div class="icon-row d-flex justify-content-between">
-                
                 <div class="item">
                     <img class="icon open" src="public/svg/beer.svg">
                     <span> <b>After ski</b></span>
+                </div>
+                <div class="item">
+                    <img class="icon open swell" src="public/svg/jacuzzi.png">
+                    <span> <b>Jacuzzi</b></span>
                 </div>
                 <div class="item">
                     <img class="icon open swell" src="public/svg/electric-guitar.svg">
@@ -78,17 +83,13 @@ if(selina) {
                     <span> <b>Transfer Aeropuerto</b> <br> <i>In & Out</i> </span>
                 </div>
             </div>
-                
-            </div>
+           
             
         </div>
-        <div class="row justify-content-around">
-                <div class="price-box col">
-                    <h3>Precio:</h3>
-                    <h3><b>880 usd</b></h3>
-                    <p class="text-center mt-2 extra"><b>* Consultar por aéreos, almuerzo en la montaña, clases de ski y snowboard.</b> </p>
-                </div>
-            </div>
+        <div class="fechas">
+            <h5 class="text-center"><b>Precio:</b> 880 usd</h5>
+            <p class="text-center mt-2 extra"><b>* Consultar por aéreos, almuerzo en la montaña, clases de ski y snowboard.</b></p>
+        </div>
     </div>
     `
     
@@ -148,6 +149,10 @@ if(skiTrips) {
                     <img class="icon open" src="public/svg/chef.svg">
                     <span> Desayuno &
                     Cena </span>
+                </div>
+                <div class="item">
+                    <img class="icon open" src="public/svg/hot-pool.png">
+                    <span> Pileta Climatizada </span>
                 </div>
                 <div class="item">
                     <img class="icon open" src="public/svg/van.svg">
@@ -451,7 +456,7 @@ function showSlides() {
 }
 setInterval(showSlides, 5000); // Change image every 5 seconds
 
-const closePopup = () => {
+/* const closePopup = () => {
     document.getElementById('popup').style.opacity = 0
     document.getElementById('popup').style.visibility = "hidden"
-}
+} */

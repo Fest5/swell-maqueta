@@ -561,6 +561,7 @@ h3 {
 
 .video-box {
 	width: 46%;
+	height: 100%;
 	background-color: rgb(238, 238, 238);
 }
 
@@ -568,6 +569,7 @@ h3 {
 @media only screen and (max-width: 991px) {
 	.video-box {
 		width: 90%;
+		height: 400px;
 		background-color: rgb(238, 238, 238);
 	}
 }
@@ -576,6 +578,7 @@ h3 {
 @media only screen and (max-width: 500px) {
 	.video-box {
 		margin-top: 3rem;
+		height: 400px;
 	}
 }
 
