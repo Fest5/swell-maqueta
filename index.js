@@ -21,20 +21,16 @@ const surfHouse = document.getElementById('surf-house')
 
 if(selina) {
     const selinaClosedMarkup = `
-    <div class="cross-container">
-        <a href="#" class="cross cross2"></a>
-    </div>
-    <div class="trip-info bottom">
+    <div class="trip-info">
         <img class="icon" src="public/svg/home.svg" alt="home">
         <h3>Snow Trips</h3>
         <h4>en Swell House</h4>
+        <p class="more">Ver más</p>
     </div>
     `
 
     const selinaOpenMarkup = `
-    <div class="cross-box">
-        <a href="#" class="cross open"></a>
-    </div>
+    
     <div class="main-open d-flex justify-content-between flex-column align-self-center  p-2">
         <div class="trip-info open">
             <div class="trip-header">
@@ -119,16 +115,12 @@ if(skiTrips) {
         <img class="icon" src="public/svg/skis.svg" alt="skis">
         <h3>Snow Trips</h3>
         <h4>en la Finca<h5/>
-    </div>
-    <div class="cross-container">
-        <a href="#" class="cross cross1"></a>
+        <p class="more">Ver más</p>
     </div>
     `
 
     const skiTripsOpenMarkup = `
-    <div class="cross-box">
-        <a href="#" class="cross open"></a>
-    </div>
+ 
     <div class="main-open d-flex justify-content-between flex-column align-self-center  p-2">
         <div class="trip-info open">
             <div class="trip-header">
@@ -209,19 +201,17 @@ if(skiTrips) {
 
 if(surfHouse) {
     const surfHouseClosedMarkup = `
-    <div class="cross-container">
-        <a href="#" class="cross cross2"></a>
-    </div>
-    <div class="trip-info bottom">
+    
+    <div class="trip-info ">
         <img class="icon" src="public/svg/home.svg" alt="home">
         <h3>Swell Surf House</h3>
+        <p class="more">Ver más</p>
     </div>
+    
     `
 
     const surfHouseOpenMarkup = `
-    <div class="cross-box">
-        <a href="#" class="cross open"></a>
-    </div>
+    
     <div class="main-open d-flex flex-column justify-content-around align-self-center">
         <div class="trip-info surf-house open">
             <div class="trip-header">
@@ -322,15 +312,12 @@ if(surfTrips) {
     <div class="trip-info">
         <img class="icon" src="public/svg/surfboard.svg" alt="skis">
         <h3>Surf Trips</h3>
+        <p class="more">Ver más</p>
     </div>
-    <div class="cross-container">
-        <a href="#" class="cross cross1"></a>
-    </div>
+   
     `
     const surfTripsOpenMarkup = `
-    <div class="cross-box">
-        <a href="#" class="cross open"></a>
-    </div>
+    
     <div class="container d-flex flex-column justify-content-between align-self-center justify-self-center h-100  p-2">
         <div class="trip-info open">
             <div class="trip-header">
